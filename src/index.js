@@ -67,10 +67,14 @@ const post = (endpoint, values, headers = {}) =>
 const put = (endpoint, values, headers = {}) =>
     send(request.put, endpoint, values, headers);
 
+const patch = (endpoint, values, headers = {}) =>
+    send(request.patch, endpoint, values, headers);
+
 export default {
     init,
     get,
     post,
     put,
+    patch,
     del,
 };
